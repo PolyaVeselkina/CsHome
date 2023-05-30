@@ -61,5 +61,8 @@ int varB1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите b2: ");
 int varB2 = Convert.ToInt32(Console.ReadLine());
 
-FindCoord(varK1, varK2, varB1, varB2);
+if (varK1 == varK2 && varB1 == varB2) Console.WriteLine("Прямые совпадают!");
+else if (varK1 == varK2) Console.WriteLine("Прямые параллельны!");
+    else
+        FindCoord(varK1, varK2, varB1, varB2);
 */
